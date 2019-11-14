@@ -5,7 +5,7 @@ Author: WpFreeware Team
 Author URI: https://wrapbootstrap.com/user/wpfreeware
 Description: SinglePro - Multipurpose Bootstrap HTML5/CSS3 One Page Template.
 Version: 1.0
-Tags: light, white, landing page,single page,Multipurpose,custom-colors,Bootstrap,responsive, html5, css3
+Tags: light, white, landing page,single page,Multipurpose,custom-colors,Bootstrap,responsive, htmlabout_slider5, css3
 */
 
 
@@ -394,6 +394,13 @@ img{
 	display: inline;
 	width: 100%;
 }
+.heading1{
+	float: left;
+	display: inline;
+  width: 100%;
+  color: #fff;
+  
+}
 .heading h2 {
 	display: inline-block;
 	margin-bottom: 35px;
@@ -762,6 +769,7 @@ div[data-dimension] {
 }
 .single_team p {
   line-height: 26px;
+  color: rgb(255, 255, 255);
 }
 .team_social{
   float: left;
@@ -1149,7 +1157,7 @@ div[data-dimension] {
   border: 1px solid #ccc;
   display: inline;
   float: left;
-  width: 100%;
+  width: 93%;
 }
 .contact_form{
 	float: left;
@@ -1522,4 +1530,9 @@ textarea .form-control {
 	.subscr_btn {font-size: 11px;}
 	.slider_caption {margin-top: 34%;}  
 	
+}
+
+.rodape{
+  text-align: center;
+
 }
