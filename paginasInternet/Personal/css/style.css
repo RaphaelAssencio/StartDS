@@ -406,11 +406,11 @@ html, body{ height: 100%; }
     color: #fff;
 }
 .banner-text h1 {
-	font-family: 'nautilus_pompiliusregular';
-    letter-spacing: 2.7px;
+	font-family: 'Shrikhand', cursive;
+    letter-spacing: 2px;
     position: relative;
     display: inline-block;
-	font-size: 74px;
+	font-size: 64px;
     line-height: 100px;
 	color:#fff;
 	padding-bottom: 0px;
@@ -418,10 +418,10 @@ html, body{ height: 100%; }
 }
 
 .banner-text h2 {
-	font-family: 'nautilus_pompiliusregular';
+	font-family: 'Shrikhand', cursive;
     letter-spacing: 2.7px;
     position: relative;
-	font-size: 37px;
+	font-size: 27px;
     line-height: 100px;
 	padding-bottom:25px;
 }
@@ -808,7 +808,8 @@ html, body{ height: 100%; }
 	color:#666;
 }
 .tab-title-menu {
-	text-align:center;
+    text-align:center;
+    
 }
 
 .tab-title-menu h2{
@@ -877,7 +878,7 @@ html, body{ height: 100%; }
 .offer-item div h3 {
     font-size: 20px;
     margin: 9px 0 0px;
-    font-family: 'nautilus_pompiliusregular';
+    font-family: 'Shrikhand', cursive;
     font-weight: 400;
     letter-spacing: .5px;
 }
