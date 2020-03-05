@@ -1,0 +1,114 @@
+create database personal;
+use personal;
+
+create table clientes(
+cpf char(11),
+nome varchar(50) not null,
+endereco varchar(100),
+celular char(12),
+cidade varchar(50),
+estado char(2) ,
+primary key(cpf)
+);
+
+create table evento(
+codigo int(10),
+valor decimal(6,2),
+horario time,
+local varchar(50),
+data date,
+quantidade_pessoas int(4) not null,
+km_extra decimal(6,2),
+veganos int(3),
+primary key (codigo)
+);
+
+create table produtos(
+codigo int(10),
+descricao varchar(50),
+qnt_estoque decimal(6,2),
+valor decimal(6,2),
+media_consumo decimal(6,2),
+primary key (codigo)
+);
+
+
+
+create table agenda(
+fk_cliente_cpf char(11),
+fk_evento_codigo int(10),
+foreign key (fk_cliente_cpf) references clientes (cpf),
+foreign key (fk_evento_codigo) references evento (codigo)
+);
+
+
+create table preve(
+fk_produtos_codigo int(10),
+fk_evento_codigo int(10),
+foreign key (fk_produtos_codigo) references produtos (codigo),
+foreign key (fk_evento_codigo) references evento (codigo)
+);
+
+create table atendente(
+nome varchar(50),
+primary key (nome)
+);
+
+
+create table solicita(
+qnt_pedido int(4),
+fk_atendente_nome varchar(50),
+fk_produtos_codigo int(10),
+fk_evento_codigo int(10),
+foreign key (fk_atendente_nome) references atendente (nome),
+foreign key (fk_produtos_codigo) references produtos (codigo),
+foreign key (fk_evento_codigo) references evento (codigo)
+);
+
+create table fornecedor(
+razao_social varchar(40),
+endereco varchar(50),
+cnpj char(14),
+telefone char(2),
+celular char(12),
+email varchar(50),
+primary key (cnpj)
+);
+
+
+create table insumos(
+preco decimal(8,3),
+unidade decimal(8,3),
+quantidade decimal(8,3),
+codigo int(10),
+descricao varchar(30),
+primary key (codigo),
+fk_fornecedor_cnpj char(14),
+foreign key (fk_fornecedor_cnpj) references fornecedor (cnpj)
+);
+
+
+create table preparo(
+qnt_preparo decimal(6,2),
+fk_produtos_codigo  int(10),
+fk_insumos_codigo int(10),
+foreign key (fk_produtos_codigo) references produtos (codigo),
+foreign key (fk_insumos_codigo) references insumos (codigo)
+);
+
+
+
+create table usuarios(
+codigo int(10),
+login varchar(50),
+senha int(8),
+nivel decimal(6,2),
+primary key (codigo)
+);
+
+
+create table parametros(
+preco_km decimal(6,2),
+preco_pessoa decimal(6,2),
+margem_lucro decimal(6,2)
+);
