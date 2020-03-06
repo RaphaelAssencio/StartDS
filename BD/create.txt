@@ -36,9 +36,9 @@ primary key (pk_codigo)
 
 
 create table agenda(
-fk_cliente_cpf char(11),
+fk_clientes_cpf char(11),
 fk_evento_codigo int(10),
-foreign key (fk_cliente_cpf) references clientes (cpf),
+foreign key (fk_clientes_cpf) references clientes (cpf),
 foreign key (fk_evento_codigo) references evento (codigo)
 );
 
