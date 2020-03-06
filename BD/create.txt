@@ -2,7 +2,7 @@ create database personal;
 use personal;
 
 create table clientes(
-cpf char(11),
+pk_cpf char(11),
 nome varchar(50) not null,
 endereco varchar(100),
 celular char(12),
@@ -12,7 +12,7 @@ primary key(cpf)
 );
 
 create table evento(
-codigo int(10),
+pk_codigo int(10),
 valor decimal(6,2),
 horario time,
 local varchar(50),
@@ -24,7 +24,7 @@ primary key (codigo)
 );
 
 create table produtos(
-codigo int(10),
+pk_codigo int(10),
 descricao varchar(50),
 qnt_estoque decimal(6,2),
 valor decimal(6,2),
@@ -50,7 +50,7 @@ foreign key (fk_evento_codigo) references evento (codigo)
 );
 
 create table atendente(
-nome varchar(50),
+pk_nome varchar(50),
 primary key (nome)
 );
 
@@ -68,7 +68,7 @@ foreign key (fk_evento_codigo) references evento (codigo)
 create table fornecedor(
 razao_social varchar(40),
 endereco varchar(50),
-cnpj char(14),
+pk_cnpj char(14),
 telefone char(2),
 celular char(12),
 email varchar(50),
@@ -80,7 +80,7 @@ create table insumos(
 preco decimal(8,3),
 unidade decimal(8,3),
 quantidade decimal(8,3),
-codigo int(10),
+pk_codigo int(10),
 descricao varchar(30),
 primary key (codigo),
 fk_fornecedor_cnpj char(14),
@@ -99,7 +99,7 @@ foreign key (fk_insumos_codigo) references insumos (codigo)
 
 
 create table usuarios(
-codigo int(10),
+pk_codigo int(10),
 login varchar(50),
 senha int(8),
 nivel decimal(6,2),
