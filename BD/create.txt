@@ -30,7 +30,7 @@ descricao varchar(50),
 qnt_estoque decimal(6,2),
 valor decimal(6,2),
 media_consumo decimal(6,2),
-primary key (codigo)
+primary key (pk_codigo)
 );
 
 
@@ -73,7 +73,7 @@ pk_cnpj char(14),
 telefone char(2),
 celular char(12),
 email varchar(50),
-primary key (cnpj)
+primary key (pk_cnpj)
 );
 
 
@@ -83,7 +83,7 @@ unidade decimal(8,3),
 quantidade decimal(8,3),
 pk_codigo int(10),
 descricao varchar(30),
-primary key (codigo),
+primary key (pk_codigo),
 fk_fornecedor_cnpj char(14),
 foreign key (fk_fornecedor_cnpj) references fornecedor (cnpj)
 );
@@ -105,7 +105,7 @@ pk_codigo int(10),
 login varchar(50),
 senha int(8),
 nivel decimal(6,2),
-primary key (codigo)
+primary key (pk_codigo)
 );
 
 
