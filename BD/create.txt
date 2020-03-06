@@ -20,7 +20,7 @@ data date,
 quantidade_pessoas int(4) not null,
 km_extra decimal(6,2),
 veganos int(3),
-primary key (codigo),
+primary key (pk_codigo),
 cidade varchar(50)
 );
 
