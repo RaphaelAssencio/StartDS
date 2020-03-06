@@ -44,6 +44,7 @@ foreign key (fk_evento_codigo) references evento (codigo)
 
 
 create table preve(
+qnt_utilizada decimal(6,2),
 fk_produtos_codigo int(10),
 fk_evento_codigo int(10),
 foreign key (fk_produtos_codigo) references produtos (codigo),
