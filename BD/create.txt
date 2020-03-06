@@ -48,7 +48,7 @@ qnt_utilizada decimal(6,2),
 fk_produtos_pk_codigo int(10),
 fk_evento_pk_codigo int(10),
 foreign key (fk_produtos_pk_codigo) references produtos (pk_codigo),
-foreign key (fk_evento_ok_codigo) references evento (pk_codigo)
+foreign key (fk_evento_pk_codigo) references evento (pk_codigo)
 );
 
 create table atendente(
