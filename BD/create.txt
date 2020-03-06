@@ -36,19 +36,19 @@ primary key (pk_codigo)
 
 
 create table agenda(
-fk_clientes_cpf char(11),
-fk_evento_codigo int(10),
-foreign key (fk_clientes_cpf) references clientes (cpf),
-foreign key (fk_evento_codigo) references evento (codigo)
+fk_clientes_pk_cpf char(11),
+fk_evento_pk_codigo int(10),
+foreign key (fk_clientes_pk_cpf) references clientes (pk_cpf),
+foreign key (fk_evento_pk_codigo) references evento (pk_codigo)
 );
 
 
 create table preve(
 qnt_utilizada decimal(6,2),
-fk_produtos_codigo int(10),
-fk_evento_codigo int(10),
-foreign key (fk_produtos_codigo) references produtos (codigo),
-foreign key (fk_evento_codigo) references evento (codigo)
+fk_produtos_pk_codigo int(10),
+fk_evento_pk_codigo int(10),
+foreign key (fk_produtos_pk_codigo) references produtos (pk_codigo),
+foreign key (fk_evento_ok_codigo) references evento (pk_codigo)
 );
 
 create table atendente(
@@ -59,12 +59,12 @@ primary key (nome)
 
 create table solicita(
 qnt_pedido int(4),
-fk_atendente_nome varchar(50),
-fk_produtos_codigo int(10),
-fk_evento_codigo int(10),
-foreign key (fk_atendente_nome) references atendente (nome),
-foreign key (fk_produtos_codigo) references produtos (codigo),
-foreign key (fk_evento_codigo) references evento (codigo)
+fk_atendente_pk_nome varchar(50),
+fk_produtos_pk_codigo int(10),
+fk_evento_pk_codigo int(10),
+foreign key (fk_atendente_pk_nome) references atendente (pk_nome),
+foreign key (fk_produtos_pk_codigo) references produtos (pk_codigo),
+foreign key (fk_evento_pk_codigo) references evento (pk_codigo)
 );
 
 create table fornecedor(
@@ -85,18 +85,18 @@ quantidade decimal(8,3),
 pk_codigo int(10),
 descricao varchar(30),
 primary key (pk_codigo),
-fk_fornecedor_cnpj char(14),
-foreign key (fk_fornecedor_cnpj) references fornecedor (cnpj)
+fk_fornecedor_pk_cnpj char(14),
+foreign key (fk_fornecedor_pk_cnpj) references fornecedor (pk_cnpj)
 );
 
 
 create table preparo(
 qnt_preparo decimal(6,2),
 unidade char(3),
-fk_produtos_codigo  int(10),
-fk_insumos_codigo int(10),
-foreign key (fk_produtos_codigo) references produtos (codigo),
-foreign key (fk_insumos_codigo) references insumos (codigo)
+fk_produtos_pk_codigo  int(10),
+fk_insumos_pk_codigo int(10),
+foreign key (fk_produtos_pk_codigo) references produtos (pk_codigo),
+foreign key (fk_insumos_pk_codigo) references insumos (pk_codigo)
 );
 
 
