@@ -20,7 +20,8 @@ data date,
 quantidade_pessoas int(4) not null,
 km_extra decimal(6,2),
 veganos int(3),
-primary key (codigo)
+primary key (codigo),
+cidade varchar(50)
 );
 
 create table produtos(
@@ -90,6 +91,7 @@ foreign key (fk_fornecedor_cnpj) references fornecedor (cnpj)
 
 create table preparo(
 qnt_preparo decimal(6,2),
+unidade char(3),
 fk_produtos_codigo  int(10),
 fk_insumos_codigo int(10),
 foreign key (fk_produtos_codigo) references produtos (codigo),
