@@ -254,4 +254,20 @@ object Form9: TForm9
     TabOrder = 5
     Text = 'Edit1'
   end
+  object RadioButton1: TRadioButton
+    Left = 400
+    Top = 163
+    Width = 113
+    Height = 17
+    Caption = 'Mestre'
+    TabOrder = 6
+  end
+  object RadioButton2: TRadioButton
+    Left = 400
+    Top = 129
+    Width = 113
+    Height = 17
+    Caption = 'Usu'#225'rio'
+    TabOrder = 7
+  end
 end

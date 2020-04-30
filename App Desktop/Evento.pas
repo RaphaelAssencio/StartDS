@@ -48,7 +48,6 @@ type
     Bevel2: TBevel;
     Edit10: TEdit;
     Label12: TLabel;
-    Label13: TLabel;
     procedure Logout1Click(Sender: TObject);
     procedure Cliente1Click(Sender: TObject);
     procedure Insumos1Click(Sender: TObject);

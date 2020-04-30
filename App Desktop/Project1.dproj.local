@@ -38,28 +38,5 @@
     <Transaction>2020/03/06 21:42:24.000.264,C:\Users\Raphael A. da Silva\Desktop\App Desktop\Parametros.pas=C:\Users\Raphael A. da Silva\Desktop\App Desktop\Unit8.pas</Transaction>
     <Transaction>2020/03/06 21:42:41.000.177,C:\Users\Raphael A. da Silva\Desktop\App Desktop\Usuario.pas=C:\Users\Raphael A. da Silva\Desktop\App Desktop\Unit9.pas</Transaction>
     <Transaction>2020/03/06 21:42:41.000.177,C:\Users\Raphael A. da Silva\Desktop\App Desktop\Usuario.dfm=C:\Users\Raphael A. da Silva\Desktop\App Desktop\Unit9.dfm</Transaction>
-  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
-    <File Path="Cliente.pas"/>
-    <File Path="Cliente.dfm"/>
-    <File Path="Contabilidade.pas"/>
-    <File Path="Contabilidade.dfm"/>
-    <File Path="Estoque.pas"/>
-    <File Path="Estoque.dfm"/>
-    <File Path="Evento.pas"/>
-    <File Path="Evento.dfm"/>
-    <File Path="Fornecedor.pas"/>
-    <File Path="Fornecedor.dfm"/>
-    <File Path="Histograma.pas"/>
-    <File Path="Histograma.dfm"/>
-    <File Path="Insumos.pas"/>
-    <File Path="Insumos.dfm"/>
-    <File Path="Login.pas"/>
-    <File Path="Login.dfm"/>
-    <File Path="Parametros.pas"/>
-    <File Path="Parametros.dfm"/>
-    <File Path="Preparo.pas"/>
-    <File Path="Preparo.dfm"/>
-    <File Path="Usuario.pas"/>
-    <File Path="Usuario.dfm"/>
-  </ProjectSortOrder>
+  </Transactions>
 </BorlandProject>

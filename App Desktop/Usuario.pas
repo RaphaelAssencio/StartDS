@@ -21,6 +21,8 @@ type
     Edit8: TEdit;
     Bevel1: TBevel;
     Bevel2: TBevel;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
 
   private
     { Private declarations }
