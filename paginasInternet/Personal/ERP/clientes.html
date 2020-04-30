@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sistema - Personal Burgers</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Font Awesome icon -->
+    <link href="./css/all.css" rel="stylesheet">
+    <!-- Pignose Calender -->
+    <link href="./plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="./plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <b class="logo-abbr"><img src="images/Personal Burguer LOGO Sistema.png" alt=""> </b>
+                    <span class="logo-compact"><img src="./images/Personal Burguer LOGO Sistema.png" alt=""></span>
+                    <span class="brand-title">
+                        <img src="images/Personal Burguer Nome Sistema.png" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">    
+            <div class="header-content clearfix">
+                
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                
+                <div class="header-right">
+                    <ul class="clearfix">
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="images/user/1.png" height="40" width="40" alt="">
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">           
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label">Sistema</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-grid menu-icon"></i><span class="nav-text">Cadastro</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./eventos.html">Eventos</a></li>
+                            <li><a href="./clientes.html">Clientes</a></li>
+                            <li><a href="./fornecedores.html">Fornecedores</a></li>
+                            <li><a href="./insumos.html">Insumos</a></li>
+                            <li><a href="./estoque.html">Estoque</a></li>
+                            
+                         </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-graph menu-icon"></i> <span class="nav-text">Gráficos</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./contabilidade.html">Contabilidade</a></li>
+                            <li><a href="./histograma.html">Histograma</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Configurações</li>
+                    
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Parâmetros</span>
+                        </a>
+                            <ul aria-expanded="false">
+                                <li><a href="./parametros.html">Parâmetros</a></li>
+                                <li><a href="./preparo.html">Preparo</a></li>
+                                
+                            </ul>
+                       
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-layers menu-icon"></i><span class="nav-text">Usuários</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./usuario.html">Novo Usúario</a></li>
+                            <li><a href="./atendente.html">Novo Atendente</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="widgets.html" aria-expanded="false">
+                            <i class="icon-logout menu-icon"></i><span class="nav-text">Logout</span>
+                        </a>
+                    </li>
+                   
+                   
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="compose-content mt-5">
+                <form action="#">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="m-b-20"> CPF</h5>
+                                <input type="text" class="form-control bg-transparent " placeholder=" To">
+                            </div>
+                            <div class="col">
+                                <h5 class="m-b-20"> Nome</h5>
+                                <input type="text" class="form-control bg-transparent" placeholder=" Subject">
+                            </div>
+                        </div>                                           
+                    </div>
+                    <div class="form-group">
+
+                    </div>
+                    <div class="form-group">
+                        <h5 class="m-b-20"> Endereço</h5>
+                        <input type="text" class="form-control bg-transparent" placeholder=" Subject">
+                    </div>
+                    <div class="form-group">
+                        <h5 class="m-b-20"> Celular</h5>
+                        <input type="text" class="form-control bg-transparent" placeholder=" Subject">
+                    </div>
+                    <div class="form-group">
+                        <h5 class="m-b-20"> Cidade</h5>
+                        <select class="form-control bg-transparent">
+                            <option value="ibitinga">Ibitinga</option>
+                            <option value="itapolis">Itápolis</option>
+                            <option value="tabatinga">Tabatinga</option>
+                            <option value="novo_horizonte">Novo Horizonte</option>
+                            <option value="gaviao_peixoto">Gavião Peixoto</option>
+                            <option value="sao_paulo">São Paulo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <h5 class="m-b-20"> Estado</h5>
+                        <select class="form-control bg-transparent">
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="ES">Espirito Santo</option>
+                        </select>                        
+                    </div>
+                </form>
+                
+            </div>
+            <div class="text-left m-t-15">
+                <button class="btn btn-primary m-b-30 m-t-15 f-s-14 p-l-20 p-r-20 m-r-10" type="button"><i class="fa fa-paper-plane m-r-5"></i> Gravar</button>
+                <button class="btn btn-dark m-b-30 m-t-15 f-s-14 p-l-20 p-r-20" type="button"><i class="ti-close m-r-5 f-s-12"></i> Apagar</button>
+            </div>            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a> 2018</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+</body>
+
+</html>

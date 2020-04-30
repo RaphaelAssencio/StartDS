@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sistema - Personal Burgers</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Font Awesome icon -->
+    <link href="./css/all.css" rel="stylesheet">
+    <!-- Pignose Calender -->
+    <link href="./plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="./plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <div class="brand-logo">
+                <a href="index.html">
+                    <b class="logo-abbr"><img src="images/Personal Burguer LOGO Sistema.png" alt=""> </b>
+                    <span class="logo-compact"><img src="./images/Personal Burguer LOGO Sistema.png" alt=""></span>
+                    <span class="brand-title">
+                        <img src="images/Personal Burguer Nome Sistema.png" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">    
+            <div class="header-content clearfix">
+                
+                <div class="nav-control">
+                    <div class="hamburger">
+                        <span class="toggle-icon"><i class="icon-menu"></i></span>
+                    </div>
+                </div>
+                
+                <div class="header-right">
+                    <ul class="clearfix">
+                        <li class="icons dropdown">
+                            <div class="user-img c-pointer position-relative"   data-toggle="dropdown">
+                                <span class="activity active"></span>
+                                <img src="images/user/1.png" height="40" width="40" alt="">
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="nk-sidebar">           
+            <div class="nk-nav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label">Sistema</li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-grid menu-icon"></i><span class="nav-text">Cadastro</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./eventos.html">Eventos</a></li>
+                            <li><a href="./clientes.html">Clientes</a></li>
+                            <li><a href="./fornecedores.html">Fornecedores</a></li>
+                            <li><a href="./insumos.html">Insumos</a></li>
+                            <li><a href="./estoque.html">Estoque</a></li>
+                            
+                         </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-graph menu-icon"></i> <span class="nav-text">Gráficos</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./contabilidade.html">Contabilidade</a></li>
+                            <li><a href="./histograma.html">Histograma</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Configurações</li>
+                    
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Parâmetros</span>
+                        </a>
+                            <ul aria-expanded="false">
+                                <li><a href="./parametros.html">Parâmetros</a></li>
+                                <li><a href="./preparo.html">Preparo</a></li>
+                                
+                            </ul>
+                       
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                            <i class="icon-layers menu-icon"></i><span class="nav-text">Usuários</span>
+                        </a>
+                        <ul aria-expanded="false">
+                            <li><a href="./usuario.html">Novo Usúario</a></li>
+                            <li><a href="./atendente.html">Novo Atendente</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="widgets.html" aria-expanded="false">
+                            <i class="icon-logout menu-icon"></i><span class="nav-text">Logout</span>
+                        </a>
+                    </li>
+                   
+                   
+                </ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="container-fluid">
+
+                <!-- row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Contextual badges</h4>
+                                <div class="bootstrap-badge"><span class="badge badge-primary">Primary</span> <span class="badge badge-secondary">Secondary</span> <span class="badge badge-success">Success</span> <span class="badge badge-danger">Danger</span> <span class="badge badge-warning">Warning</span>
+                                    <span class="badge badge-info">Info</span> <span class="badge badge-light">Light</span> <span class="badge badge-dark">Dark</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Pill badges</h4>
+                                <div class="bootstrap-badge"><span class="badge badge-pill badge-primary">Primary</span> <span class="badge badge-pill badge-secondary">Secondary</span> <span class="badge badge-pill badge-success">Success</span> <span class="badge badge-pill badge-danger">Danger</span>
+                                    <span class="badge badge-pill badge-warning">Warning</span> <span class="badge badge-pill badge-info">Info</span> <span class="badge badge-pill badge-light">Light</span> <span class="badge badge-pill badge-dark">Dark</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Links badges</h4>
+                                <div class="bootstrap-badge"><a href="#" class="badge badge-primary">Primary</a> <a href="#" class="badge badge-secondary">Secondary</a> <a href="#" class="badge badge-success">Success</a> <a href="#" class="badge badge-danger">Danger</a> <a href="#"
+                                        class="badge badge-warning">Warning</a>
+                                    <a href="#" class="badge badge-info">Info</a> <a href="#" class="badge badge-light">Light</a> <a href="#" class="badge badge-dark">Dark</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Contextual label</h4>
+                                <div class="bootstrap-label"><span class="label label-primary">Primary</span> <span class="label label-secondary">Secondary</span> <span class="label label-success">Success</span> <span class="label label-danger">Danger</span> <span class="label label-warning">Warning</span>
+                                    <span class="label label-info">Info</span> <span class="label label-light">Light</span> <span class="label label-dark">Dark</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Pill label</h4>
+                                <div class="bootstrap-label"><span class="label label-pill label-primary">Primary</span> <span class="label label-pill label-secondary">Secondary</span> <span class="label label-pill label-success">Success</span> <span class="label label-pill label-danger">Danger</span>
+                                    <span class="label label-pill label-warning">Warning</span> <span class="label label-pill label-info">Info</span> <span class="label label-pill label-light">Light</span> <span class="label label-pill label-dark">Dark</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Links badges</h4>
+                                <div class="bootstrap-label"><a href="#" class="label label-primary">Primary</a> <a href="#" class="label label-secondary">Secondary</a> <a href="#" class="label label-success">Success</a> <a href="#" class="label label-danger">Danger</a> <a href="#"
+                                        class="label label-warning">Warning</a>
+                                    <a href="#" class="label label-info">Info</a> <a href="#" class="label label-light">Light</a> <a href="#" class="label label-dark">Dark</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a> 2018</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+</body>
+
+</html>
