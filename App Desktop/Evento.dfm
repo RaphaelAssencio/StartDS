@@ -171,7 +171,7 @@ object Form2: TForm2
     ParentFont = False
   end
   object Label1: TLabel
-    Left = 340
+    Left = 100
     Top = 326
     Width = 126
     Height = 42
@@ -275,6 +275,26 @@ object Form2: TForm2
     Top = 247
     Width = 257
     Height = 66
+  end
+  object Label12: TLabel
+    Left = 647
+    Top = 180
+    Width = 33
+    Height = 13
+    Caption = 'C'#243'digo'
+  end
+  object Label13: TLabel
+    Left = 499
+    Top = 326
+    Width = 137
+    Height = 42
+    Caption = 'Previs'#227'o'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindow
+    Font.Height = -35
+    Font.Name = 'Roboto Bk'
+    Font.Style = []
+    ParentFont = False
   end
   object Apagar: TBitBtn
     Left = 501
@@ -488,6 +508,14 @@ object Form2: TForm2
     Width = 90
     Height = 21
     TabOrder = 10
+    Text = 'Edit1'
+  end
+  object Edit10: TEdit
+    Left = 647
+    Top = 199
+    Width = 66
+    Height = 21
+    TabOrder = 11
     Text = 'Edit1'
   end
   object MainMenu1: TMainMenu
