@@ -74,6 +74,8 @@ pk_cnpj char(14),
 telefone char(2),
 celular char(12),
 email varchar(50),
+cidade varchar(50),
+estado char(2) ,
 primary key (pk_cnpj)
 );
 
